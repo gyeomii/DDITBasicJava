@@ -17,7 +17,7 @@ public class Experiment2 {
 		String telNum = scanner.nextLine();
 		
 		System.out.println("[입력한 내용]");
-		System.out.println("1.이름: " + name);
+		System.out.println("1. 이름: " + name);
 		System.out.println("2. 주민번호 앞 6자리: " + privatNum);
 		System.out.println("3. 전화번호: " + telNum);
 	}
