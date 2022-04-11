@@ -20,6 +20,9 @@ public class Experiment2 {
 		System.out.println("1. 이름: " + name);
 		System.out.println("2. 주민번호 앞 6자리: " + privatNum);
 		System.out.println("3. 전화번호: " + telNum);
+		
+		String tel1 = "010"; String tel2 = "123"; String tel3 = "1234";
+		System.out.printf("전화: %1$s-%2$s-%3$s", tel1, tel2, tel3);
 	}
 		
 	}
