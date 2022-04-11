@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Exercise25 {
 	public static void main(String[] args) {
+		
+		//동전의 갯수에 따른 총 금액을 구해보자
+		
 		Scanner scanner = new Scanner(System.in);
 		int coin500;
 		int coin100;

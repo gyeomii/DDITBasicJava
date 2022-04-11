@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Exercise21 {
 	public static void main(String[] args) {
+		
+		//직사각형의 넓이와 둘레를 구해보자
+		
 		double width;
 		double height;
 		double area;

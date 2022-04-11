@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Exercise24 {
 	public static void main(String[] args) {
+		
+		//원기둥의 밑면의 넓이와 부피를 구해보자
+		
 		Scanner scanner =  new Scanner(System.in);
 		double radius;
 		double height;
