@@ -23,6 +23,7 @@ public class Experiment2 {
 		
 		String tel1 = "010"; String tel2 = "123"; String tel3 = "1234";
 		System.out.printf("전화: %1$s-%2$s-%3$s", tel1, tel2, tel3);
+		//1$ -> 첫번째 변수를 사용한다는 의미, 2$두번쨰, 3$세번째
 	}
 		
 	}
