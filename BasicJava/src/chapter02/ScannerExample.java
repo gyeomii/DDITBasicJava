@@ -25,8 +25,8 @@ public class ScannerExample {
 	  int intData = scanner.nextInt();
 
 	  
-	  	System.out.println("입력한 이름 \"" + stringData + "\"");
-	    System.out.println("입력한 나이 \"" + intData + "\"");
+	  	System.out.println("이름: " + stringData + "\n나이: " + intData);
+	  	System.out.printf("이름: %s\n나이: %d\n",stringData, intData);
 	  }
 	  System.out.println("종료");
 	}
