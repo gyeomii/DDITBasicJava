@@ -12,7 +12,7 @@ public class Exercise25 {
 		int coin10;
 		int total;
 		
-		//input
+		//입력(input)
 		System.out.print("500원짜리 동전의 갯수: ");
 		coin500 = scanner.nextInt();
 		System.out.print("100원짜리 동전의 갯수: ");
@@ -22,10 +22,10 @@ public class Exercise25 {
 		System.out.print("100원짜리 동전의 갯수: ");
 		coin10 = scanner.nextInt();
 		
-		//data processing
+		//처리(data processing)
 		total = (500 * coin500) + (100 * coin100) + (50 * coin50) + (10 * coin10);
 		
-		//output
+		//출력(output)
 		System.out.println("저금통 안의 동전의 총 액수: " + total);
 	}
 
