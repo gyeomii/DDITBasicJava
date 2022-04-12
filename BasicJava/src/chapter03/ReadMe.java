@@ -15,7 +15,6 @@ public class ReadMe {
 	 *  
 	 *  대입연산자의 우선순위가 연산자중에 가장 낮다.
 	 */
-	int a = 2020;
 	int b = 5;
 	double c = 15 % 3.4176;
 	
