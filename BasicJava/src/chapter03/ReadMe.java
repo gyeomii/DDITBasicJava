@@ -16,10 +16,16 @@ public class ReadMe {
 	 *  대입연산자의 우선순위가 연산자중에 가장 낮다.
 	 */
 	int b = 5;
-	double c = 15 % 3.4176;
+	int c = 5;
 	
 	System.out.printf("%d, %d\n", ++b, b );
-	System.out.printf("%f, %f", c++, c );
+	System.out.printf("%d, %d", c++, c );
+	
+	int i = 0;
+	i = i + 1;
+	i += 1;
+	i++;
+	++i;
 	
 	}
 }
