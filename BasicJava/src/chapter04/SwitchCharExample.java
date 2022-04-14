@@ -1,7 +1,5 @@
 package chapter04;
 
-import java.util.Random;
-
 public class SwitchCharExample {
 	public static void main(String[] args) {
 		char grade = 'B';

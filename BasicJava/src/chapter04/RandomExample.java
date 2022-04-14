@@ -13,8 +13,5 @@ public class RandomExample {
 			// random.nextInt(추출할 숫자의 수) + 처음숫자;
 			int a = random.nextInt(6); // 0 ~ 5까지 난수
 			int b  = random.nextInt(6) + 1; //1 ~ 6까지 난수
-			int c  = random.nextInt(6) + 1; //1 ~ 6까지 난수
-			int d  = random.nextInt(6) + 1; //1 ~ 6까지 난수
-			
 	}
 }
