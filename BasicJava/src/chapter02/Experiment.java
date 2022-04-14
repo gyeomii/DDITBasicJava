@@ -1,7 +1,5 @@
 package chapter02;
 
-import java.util.Iterator;
-
 public class Experiment {
 	public static void main(String[] args) {
 		long var1 = 2L;
