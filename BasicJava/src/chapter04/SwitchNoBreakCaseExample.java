@@ -17,6 +17,8 @@ public class SwitchNoBreakCaseExample {
 			System.out.println("업무를 봅니다");
 		default:
 			System.out.println("외근을 나갑니다.");
+			
+		//break; 가 없으면 switch case문은 멈추지 않는다.
 		}
 	}
 }
