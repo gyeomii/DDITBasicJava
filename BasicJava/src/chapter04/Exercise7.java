@@ -14,9 +14,9 @@ public class Exercise7 {
 			System.out.println("----------------------------------");
 			System.out.print("선택> ");
 			
-			int getNum = Integer.parseInt(scanner.nextLine());
+			int menuNum = Integer.parseInt(scanner.nextLine());
 			
-			switch(getNum) {
+			switch(menuNum) {
 				case 1:
 					System.out.print("예금액> ");
 					balance += Integer.parseInt(scanner.nextLine());
