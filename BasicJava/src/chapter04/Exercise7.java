@@ -19,7 +19,7 @@ public class Exercise7 {
 				while(getNum == 1) {
 					System.out.print("예금액> ");
 					credit = scanner.nextInt();
-					balance = credit;
+					balance += credit;
 					break;
 				}
 				while(getNum == 2) {
