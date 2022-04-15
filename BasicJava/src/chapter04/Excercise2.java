@@ -1,7 +1,5 @@
 package chapter04;
 
-import java.util.Random;
-
 public class Excercise2 {
 	public static void main(String[] args) {
 		for(int x = 1; x <= 10; x++ ) {
