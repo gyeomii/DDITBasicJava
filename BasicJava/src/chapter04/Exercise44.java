@@ -7,37 +7,21 @@ public class Exercise44 {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("가위 바위 보 게임");
 		System.out.print("철수: ");
-		String chulsu = scanner.next();
+		String cheolsu = scanner.next();
 		System.out.print("영희: ");
-		String younghee = scanner.next();
+		String yeonghui = scanner.next();
+		String result;
 		
-		if(chulsu.equals(younghee)) {
-			System.out.println("결과: 비김!");
+		if(cheolsu.equals(yeonghui)) {
+			result = "무승부!";
+		}else if(cheolsu.equals("가위") && yeonghui.equals("바위")
+				 ||cheolsu.equals("바위") && yeonghui.equals("보")
+				 ||cheolsu.equals("보") && yeonghui.equals("가위")){
+			 result = "영희 승리!";
+		}else {
+			result = "철수 승리!";
 		}
-		if(chulsu.equals("가위")) {
-			if(younghee.equals("바위")){
-				System.out.println("결과: 영희 승리!");
-			}
-			else if(younghee.equals("보")) {
-				System.out.println("결과: 철수 승리!");
-			}
-		}
-		if(chulsu.equals("바위")) {
-			if(younghee.equals("가위")){
-				System.out.println("결과: 철수 승리!");
-			}
-			else if(younghee.equals("보")) {
-				System.out.println("결과: 영희 승리!");
-			}
-		}
-		if(chulsu.equals("보")) {
-			if(younghee.equals("가위")){
-				System.out.println("결과: 영희 승리!");
-			}
-			else if(younghee.equals("바위")) {
-				System.out.println("결과: 철수 승리!");
-			}
-		}
-		
+		System.out.println("결과: " + result);
+		scanner.close();
 	}
 }
