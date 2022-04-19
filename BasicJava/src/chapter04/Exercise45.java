@@ -10,7 +10,7 @@ public class Exercise45 {
 		int randomNum = random.nextInt(100)+1;
 		int inputNum;
 		int count = 0;
-	
+		
 		 do {
 	          System.out.print("1부터 100 사이의 정수 중 하나를 선택하세요: ");
 	          inputNum = scanner.nextInt();
