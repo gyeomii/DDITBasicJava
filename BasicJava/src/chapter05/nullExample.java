@@ -5,7 +5,7 @@ public class nullExample {
 		//String str1 = new String(null);
 		String str1 = null;
 		String str2 = "";
-		String a[] = {null, null, null, null};
+		String[] a = {null, null, null, null};
 		
 		str1 += 10;
 		str2 += 10;
@@ -19,6 +19,7 @@ public class nullExample {
 		
 		str2 = null;
 		System.out.println(str2);
+		
 		System.out.println(str1 == str2);
 	}
 }
