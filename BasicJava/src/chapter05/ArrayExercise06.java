@@ -38,7 +38,7 @@ public class ArrayExercise06 {
 					if(max < scores[i]) {
 						max = scores[i];
 					}
-				sum += scores[i];
+					sum += scores[i];
 				}
 				double avg = (double) sum / studentNum;
 				System.out.println("최고점수: " + max);
