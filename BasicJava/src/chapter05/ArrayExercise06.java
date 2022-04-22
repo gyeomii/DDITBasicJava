@@ -7,7 +7,7 @@ public class ArrayExercise06 {
 		boolean run = true;
 		int studentNum = 0;
 		int[] scores = null;
-		int max = 0;
+		int max = Integer.MIN_VALUE;
 		int sum = 0;
 		int i;
 		Scanner scanner = new Scanner(System.in);
