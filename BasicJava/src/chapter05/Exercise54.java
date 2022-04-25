@@ -8,7 +8,8 @@ public class Exercise54 {
 		int diceNum;
 		int[] diceCount = new int[6];
 		
-		for (int i = 0; i < 10000; i++) {
+		/* 내가 생각한 코드
+		 * for (int i = 0; i < 10000; i++) {
 			diceNum = random.nextInt(6) + 1;
 			if(diceNum == 1) {
 				diceCount[0]++;
@@ -23,6 +24,10 @@ public class Exercise54 {
 			}else {
 				diceCount[5]++;
 			}
+		}*/
+		
+		for (int i = 0; i < 10000; i++) { //선생님이 하신 코드
+			diceCount[random.nextInt(6)]++;
 		}
 			
 			System.out.println("-----------");
