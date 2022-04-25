@@ -17,7 +17,7 @@ public class Exercise53 {
 		System.out.println("게이머: " + human);
 		System.out.println("인공지능: " + com[comNum]);
 		
-		String result;
+		String result = "";
 		if(com[comNum].equals(human)) {
 			result = "무승부!";
 		}else if(com[comNum].equals("가위") && human.equals("바위")
