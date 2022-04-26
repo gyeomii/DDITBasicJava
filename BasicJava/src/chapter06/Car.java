@@ -8,6 +8,7 @@ public class Car {
 	int maxSpeed;
 	
 	Car(){
+		this(null, null, 0);
 	}
 	
 	Car(String model){
