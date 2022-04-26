@@ -12,7 +12,7 @@ public class newLotto {
 			lottoNum[i] = i+1;
 		}
 		
-	     for (int i = lottoNum.length - 1; i >= 0; i--) { //배열값 섞기
+	     for (int i = 0; i < lottoNum.length; i++) { //배열값 섞기
              
 	            int j = random.nextInt(i+1);
 	             
@@ -22,8 +22,8 @@ public class newLotto {
 	     }	
 	     
 	     System.out.print("로또번호: ");
-	     for (int j = 0; j < 6; j++) {
-	    	 System.out.print(lottoNum[j] + " ");
+	     for (int k = 0; k < 6; k++) {
+	    	 System.out.print(lottoNum[k] + " ");
 		}
 	}
 }
