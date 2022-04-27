@@ -2,26 +2,31 @@ package chapter06;
 
 public class Car {
 	
-	String company = "현대자동차";
-	String model;
-	String color;
-	int maxSpeed;
+	int gas;
 	
-	Car(){
-		this(null, null, 0);
+	void setGas(int gas) { //setGas메소드 생성
+		this.gas = gas; //받아온 데이터를 gas에 저장
 	}
 	
-	Car(String model){
-		this(model, "은색", 250);
+	boolean isLeftGas() { //isLeftGas메소드 생성
+		if(gas == 0) { //gas가 0이면 if문 실행
+			System.out.println("gas가 없습니다.");
+			return false; //false를 반환
+		}
+		System.out.println("gas가 있습니다.");
+		return true; //gas가 0이 아니면 true를 반환
+		
 	}
 	
-	Car(String model, String color){
-		this(model, color, 250);
-	}
-	
-	Car(String model, String color, int maxSpeed){
-		this.model = model;
-		this.color = color;
-		this.maxSpeed = maxSpeed;
+	void run() { //run메소드 생성
+		while(true) { //while 안에 true 이므로 항상 실행
+			if(gas > 0) { //gas가 0보다 크면 if문 실행
+				System.out.println("달립니다.(gas잔량: " + gas + ")");
+				gas -= 1;
+			}else { //gas가 0이면 else 실행
+				System.out.println("멈춥니다.(gas잔량: " + gas + ")");
+				return; //반환값이 없는 void타입이므로 메소드 종료
+			}
+		}
 	}
 }
