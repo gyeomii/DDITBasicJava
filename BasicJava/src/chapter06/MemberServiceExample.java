@@ -4,15 +4,12 @@ import java.util.Scanner;
 
 public class MemberServiceExample {
 	public static void main(String[] args) {
-		MemberService  memberService = new MemberService();
 		Scanner scanner = new Scanner(System.in);
+		MemberService  memberService = new MemberService();
+		String id = " ";
+		String pw = " ";
 		
-		System.out.print("ID: ");
-		String id = scanner.nextLine();
-		System.out.print("P/W: ");
-		String pw = scanner.nextLine();
-		boolean result = memberService.login(id, pw);
-		
+		boolean result = memberService.login(id, pw); 
 		if(result) {
 			System.out.println("로그인 되었습니다.");
 			System.out.print("command: ");
