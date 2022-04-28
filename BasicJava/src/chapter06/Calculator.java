@@ -1,14 +1,18 @@
 package chapter06;
 
 public class Calculator {
+	static double pi = 3.14159;
 	
 	void powerOn() {
 		System.out.println("전원을 켭니다.");
 	}
 	
-	int plus(int x, int y) {
-		int result = x + y;
-		return result;
+	static int plus(int x, int y) {
+		return x + y;
+	}
+	
+	static int minus(int x, int y) {
+		return x - y;
 	}
 	
 	double divide(int x, int y) {
