@@ -1,7 +1,8 @@
 package BaekJoon;
-import java.util.Scanner;
-public class BaekJoon1110 {
 
+import java.util.Scanner;
+
+public class BaekJoon1110 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("숫자 입력: ");
