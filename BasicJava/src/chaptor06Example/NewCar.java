@@ -4,7 +4,7 @@ public class NewCar {
 	//필드
 	private double speed;
 	private String color;
-	static final double MAX_SPEED = 200.0;
+	static final double MAX_SPEED = 200.0/1.6;
 	static double distance;
 	//생성자
 	public NewCar() {
@@ -15,8 +15,7 @@ public class NewCar {
 	}
 	//메소드
 	public double getSpeed() {
-		double mileSpeed = killoToMile(speed);
-		double kiloSpeed = mileToKilo(mileSpeed);
+		double kiloSpeed = mileToKilo(speed);
 		return kiloSpeed;
 	}
 	
@@ -35,7 +34,7 @@ public class NewCar {
 	public boolean speedUp(double speed) {
 		double mileSpeed = killoToMile(speed);
 		double maxMileSpeed = killoToMile(MAX_SPEED);
-
+		
 		if(mileSpeed > maxMileSpeed ) {
 			this.speed = this.speed;
 			return false;
@@ -43,14 +42,13 @@ public class NewCar {
 			this.speed = 0;
 			return false;
 		}else {
-			this.speed += speed;
+			this.speed += mileSpeed;
 			return true;
 		}
 	}
 	
 	static double getMaxSpeed() {
-		double maxMileSpeed = killoToMile(MAX_SPEED);
-		double maxKilospeed = mileToKilo(maxMileSpeed);
+		double maxKilospeed = mileToKilo(MAX_SPEED);
 		return maxKilospeed;
 	}
 	
