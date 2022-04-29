@@ -36,7 +36,7 @@ public class NewCar {
 		if(speed + this.speed < 0 ) {
 			speed = 0;
 			return false;
-		}else if(speed > MAX_SPEED) {
+		}else if(speed + this.speed  > MAX_SPEED) {
 			return false;
 		}else {
 			this.speed += speed;

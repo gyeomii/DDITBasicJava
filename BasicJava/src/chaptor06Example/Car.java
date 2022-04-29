@@ -30,11 +30,10 @@ public class Car {
 	}
 	
 	public boolean speedUp(double speed) {
-		if(speed > MAX_SPEED ) {
-			this.speed = this.speed;
+		if(speed + this.speed < 0 ) {
+			speed = 0;
 			return false;
-		}else if(speed < 0) {
-			this.speed = 0;
+		}else if(speed + this.speed  > MAX_SPEED) {
 			return false;
 		}else {
 			this.speed += speed;

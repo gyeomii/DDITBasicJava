@@ -1,10 +1,11 @@
 package chaptor06Example;
 
 public class Circle {
+	//필드
 	double radius;
 	double x;
 	double y;
-	
+	//메소드
 	public double getArea() {
 		double area = Math.PI * radius * radius;
 		return area;
