@@ -6,7 +6,7 @@ public class DmbCellPhone extends Cellphone {
 
 	// 생성자
 	public DmbCellPhone(String model, String color, int channel) {
-		this.model = model;
+		this.model = model; 
 		this.color = color;
 		this.channel = channel;
 	}
