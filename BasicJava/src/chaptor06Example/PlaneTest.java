@@ -1,7 +1,5 @@
 package chaptor06Example;
 
-import chapter05.newLotto;
-
 public class PlaneTest {
 
 	public static void main(String[] args) {
