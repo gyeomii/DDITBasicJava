@@ -1,4 +1,4 @@
-package chaptor06Example;
+package chapter06Example;
 
 public class Car {
 	// 필드
@@ -32,14 +32,11 @@ public class Car {
 	}
 
 	public boolean speedUp(double speed) {
-		if (speed + this.speed < 0) {
-			speed = 0;
-			return false;
-		} else if (speed + this.speed > MAX_SPEED) {
-			return false;
-		} else {
+		if (speed + this.speed >= 0 && speed + this.speed <= MAX_SPEED) {
 			this.speed += speed;
 			return true;
+		}else {
+			return false;
 		}
 	}
 

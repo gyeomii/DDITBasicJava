@@ -1,4 +1,4 @@
-package chaptor06Example;
+package chapter06Example;
 
 public class NewCar {
 	// 필드
@@ -34,14 +34,11 @@ public class NewCar {
 
 	public boolean speedUp(double speed) {
 		speed = killoToMile(speed);
-		if (speed + this.speed < 0) {
-			speed = 0;
-			return false;
-		} else if (speed + this.speed > MAX_SPEED) {
-			return false;
-		} else {
+		if (speed + this.speed >= 0 && speed + this.speed <= MAX_SPEED) {
 			this.speed += speed;
 			return true;
+		} else {
+			return false;
 		}
 	}
 
@@ -50,13 +47,11 @@ public class NewCar {
 	}
 
 	static private double killoToMile(double distance) {
-		double result = distance / 1.6;
-		return result;
+		return distance / 1.6;
 	}
 
 	static private double mileToKilo(double distance) {
-		double result = distance * 1.6;
-		return result;
+		return distance * 1.6;
 	}
 
 	public String toString() {

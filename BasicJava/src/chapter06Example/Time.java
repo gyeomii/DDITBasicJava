@@ -1,4 +1,4 @@
-package chaptor06Example;
+package chapter06Example;
 
 public class Time {
 	// 필드
