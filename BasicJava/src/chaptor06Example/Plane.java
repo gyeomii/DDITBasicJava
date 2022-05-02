@@ -41,9 +41,7 @@ public class Plane {
 	}
 
 	public void setMaxNumberOfPassengers(int maxNumberOfPassengers) {
-		if (maxNumberOfPassengers < 0) {
-			this.maxNumberOfPassengers = 0;
-		} else {
+		if (maxNumberOfPassengers > 0) {
 			this.maxNumberOfPassengers = maxNumberOfPassengers;
 		}
 	}
