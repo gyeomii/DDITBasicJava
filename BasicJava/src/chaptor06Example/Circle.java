@@ -6,6 +6,11 @@ public class Circle {
 	private double x;
 	private double y;
 
+	// 생성자
+	public Circle() {
+
+	}
+
 	// 메소드
 	public double getArea() {
 		double area = Math.PI * radius * radius;
