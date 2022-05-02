@@ -14,5 +14,6 @@ public class baekjoon10950 {
 			int num2 = scanner.nextInt();
 			System.out.println(num1 + num2);
 		}
+		scanner.close();
 	}
 }
