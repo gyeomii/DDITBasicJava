@@ -9,5 +9,4 @@ public class Student extends People {
 		super(name, ssn);
 		this.studentNo = studentNo;
 	}
-
 }
