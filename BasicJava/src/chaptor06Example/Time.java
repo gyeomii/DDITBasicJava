@@ -8,29 +8,17 @@ public class Time {
 
 	// 생성자
 	public Time() {
-		hour = 0;
-		minute = 0;
-		second = 0;
 	}
 
 	public Time(int hour, int minute, int second) {
-		this.hour = hour;
-		this.minute = minute;
-		this.second = second;
-		if (hour > 0 && hour <= 23) {
+		if (hour > 0 && hour < 24) {
 			this.hour = hour;
-		} else {
-			this.hour = 0;
 		}
-		if (minute > 0 && minute <= 59) {
+		if (minute > 0 && minute < 60) {
 			this.minute = minute;
-		} else {
-			this.minute = 0;
 		}
-		if (second > 0 && second <= 59) {
+		if (second > 0 && second < 60) {
 			this.second = second;
-		} else {
-			this.second = 0;
 		}
 	}
 

@@ -30,10 +30,8 @@ public class Circle {
 	}
 
 	public void setRadius(double radius) {
-		if (radius < 0) { // 만약 잘못된 값이 입력되면 반지름을 0으로 한다.
-			this.radius = 0;
-		} else {
-			this.radius = radius;
+		if (radius > 0) { // 반지름이 0보다 클 때만 반지름을 입력받고
+			this.radius = radius; //0보다 작거나 같을 땐 처음 초기화된 값 0 으로 실행
 		}
 	}
 
