@@ -2,9 +2,9 @@ package chapter07_2;
 
 public class CarExample {
 	public static void main(String[] args) {
-		Car car = new Car();
+		Car car = new Car();// Car 객체 생성
 
-		for (int i = 1; i <= 5; i++) {
+		for (int i = 1; i <= 5; i++) {// Car 객체의 run()메소드 실행
 			int problemLocation = car.run();
 
 			switch (problemLocation) {
