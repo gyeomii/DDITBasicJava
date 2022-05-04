@@ -5,7 +5,7 @@ public class HttpServletExample {
 		method(new LoginServlet());
 		method(new FileDownloadServlet());
 	}
-	
+
 	public static void method(HttpServlet servlet) {
 		servlet.service();
 	}
