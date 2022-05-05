@@ -9,5 +9,4 @@ public class Shape {
 	public double perimeter() {
 		return 0;
 	}
-
 }
