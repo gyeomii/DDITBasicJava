@@ -1,15 +1,11 @@
 package Chapter07Bank2;
 
-import java.text.DecimalFormat;
-
 public class Customer {
 	// 필드
 	private String firstName;
 	private String lastName;
 	private BankAccount[] accounts; // 사용자 정의 타입인 클래스형 변수
 	private int numberOfAccounts;
-	// 숫자에 세자리 마다 ','를 찍어주기 위한 함수, 출력은 String 이다.
-	DecimalFormat formatter = new DecimalFormat("###,###");
 
 	// 생성자
 	public Customer(String firstName, String lastName) {
@@ -41,8 +37,8 @@ public class Customer {
 		return numberOfAccounts;
 	}
 
-	public String toString() { // 출력 메소드
-		return String.format("이름: %s %s, 잔고: %f", firstName, lastName, accounts);
+	public String toString() {
+		return String.format("이름: %s %s, 계좌의 갯수: %d", firstName, lastName, numberOfAccounts);
 	}
 
 }

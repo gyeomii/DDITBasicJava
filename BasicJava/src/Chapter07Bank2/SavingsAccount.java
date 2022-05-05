@@ -1,7 +1,5 @@
 package Chapter07Bank2;
 
-import chapter07Example.BankAccount;
-
 public class SavingsAccount extends BankAccount {
 	// 필드
 	private double interestRate; // 이자율

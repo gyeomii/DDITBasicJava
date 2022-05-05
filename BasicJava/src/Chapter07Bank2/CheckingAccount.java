@@ -1,7 +1,5 @@
 package Chapter07Bank2;
 
-import chapter07Example.BankAccount;
-
 public class CheckingAccount extends BankAccount {
 	// 필드
 	private SavingsAccount protectedBy;// Savings
@@ -20,8 +18,8 @@ public class CheckingAccount extends BankAccount {
 	@Override
 	public boolean withdraw(int amount) {
 		if (balance < amount) {
-			balance = 0;
 		    protectedBy.balance -= (amount - balance);
+		    balance = 0;
 			return true;
 		}else if(balance > amount){
 			balance -= amount;

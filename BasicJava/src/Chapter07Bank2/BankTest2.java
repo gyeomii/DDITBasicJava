@@ -1,11 +1,12 @@
 package Chapter07Bank2;
 
-import chapter07Example.Bank;
-import chapter07Example.Customer;
+import java.text.DecimalFormat;
 
 public class BankTest2 {
 	public static void main(String[] args) {
 		Bank bank = new Bank();
+		// 숫자에 세자리 마다 ','를 찍어주기 위한 함수, 출력은 String 이다.
+		DecimalFormat formatter = new DecimalFormat("###,###");
 
 		Customer customer1 = new Customer("Tony", "Stark");
 		SavingsAccount customer1SavingsAccount = new SavingsAccount(2000, 0.01);
