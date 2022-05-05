@@ -2,17 +2,17 @@ package chapter07Example;
 
 public class Bank {
 	// 필드
-	private Customer[] customers;
+	private Customer[] customers; 
 	private int numberOfCustomers;
 
 	// 생성자
 	public Bank() {
-		this.customers = new Customer[10];
+		this.customers = new Customer[10]; // customers 배열 초기화
 	}
 	
 	public void addCustomer(Customer customer) {
-		customers[numberOfCustomers] = customer;
-		numberOfCustomers++;
+		customers[numberOfCustomers] = customer; //customers배열에 고객정보 저장
+		numberOfCustomers++; //고객 수 증가
 	}
 
 	public Customer[] getCustomers() {
