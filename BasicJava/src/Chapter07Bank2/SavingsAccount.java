@@ -12,6 +12,6 @@ public class SavingsAccount extends BankAccount {
 
 	// 메소드
 	public void updateBalance(int period) {// 이자를 계산하여 잔액에 추가
-		this.balance += balance * interestRate * period;
+		balance += balance * interestRate * period;
 	}
 }

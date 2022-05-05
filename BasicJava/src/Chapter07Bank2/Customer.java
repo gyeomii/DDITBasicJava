@@ -15,7 +15,6 @@ public class Customer {
 	}
 
 	// 메소드
-
 	public String getFirstName() {
 		return firstName;
 	}
