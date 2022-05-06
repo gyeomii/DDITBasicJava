@@ -7,7 +7,7 @@ public class Bank {
 
 	// 생성자
 	public Bank() {
-		this.customers = new Customer[10]; // customers 배열 초기화
+		customers = new Customer[10]; // customers 배열 초기화
 	}
 
 	public void addCustomer(Customer customer) {
