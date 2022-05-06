@@ -25,7 +25,7 @@ public class BankAccount {
 	public boolean withdraw(int amount) { // 출금 메소드
 		if (balance < amount) { // 잔고 < 출금액 일 때
 			return false;
-		} else { //잔고 > 출금액일 때
+		} else { // 잔고 > 출금액일 때
 			balance -= amount; // 잔고에서 출금액 만큼 출금
 			return true;
 		}
@@ -42,7 +42,7 @@ public class BankAccount {
 		}
 	}
 
-	public String toString() { //잔액 출력
+	public String toString() { // 잔액 출력
 		return String.format("%s", formatter.format(balance));
 	}
 }

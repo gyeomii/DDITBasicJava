@@ -45,11 +45,12 @@ public class BankTest2 {
 	}
 
 	private static void printCustomers(Customer[] customers) {
-		for (Customer c : customers) { //customers 를 c에다가 하나씩 대입
+		for (Customer c : customers) { // customers 를 c에다가 하나씩 대입
 			if (c != null) {
 				System.out.println(c);
 				for (int i = 0; i < c.getNumberOfAccounts(); i++) {
-					System.out.println("계좌 종류: " + c.getAccount(i).getClass().getSimpleName() + ", 잔고: " + c.getAccount(i) + "원");
+					System.out.println(
+							"계좌 종류: " + c.getAccount(i).getClass().getSimpleName() + ", 잔고: " + c.getAccount(i) + "원");
 				}
 				System.out.println();
 			}
