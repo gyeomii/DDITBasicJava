@@ -1,4 +1,4 @@
-package chapter07;
+package chapter07_1;
 
 public class Cellphone {
 	// 필드
