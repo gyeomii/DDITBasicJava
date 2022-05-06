@@ -1,4 +1,4 @@
-package chapter07Example;
+package chapter07Example.Shape;
 
 public class ShapeTest {
 	public static void main(String[] args) {

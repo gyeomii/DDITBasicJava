@@ -1,4 +1,4 @@
-package chapter07Example;
+package chapter07Example.Human;
 
 public class StudentTest {
 	public static void main(String[] args) {
