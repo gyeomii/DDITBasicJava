@@ -18,13 +18,21 @@ public class BankAccount {
 	}
 
 	public boolean withdraw(int amount) { // 출금 메소드
-		balance -= amount; // 잔고에서 출금액 만큼 출금
-		return true;
+		if (balance>= amount) {
+			balance -= amount; // 잔고에서 출금액 만큼 출금
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public boolean transfer(int amount, BankAccount otherAccount) { // 현재계좌에서 amount만큼 다른계좌로 송금하는 메소드
-		withdraw(amount);
-		otherAccount.deposit(amount);
-		return true;
+		if (withdraw(amount) == true) {
+			otherAccount.deposit(amount);
+			withdraw(amount);
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
