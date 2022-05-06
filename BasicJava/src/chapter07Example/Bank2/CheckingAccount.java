@@ -21,11 +21,11 @@ public class CheckingAccount extends BankAccount {
 			System.out.println("인출할 수 없습니다.");
 			return false;
 		} else if (balance < amount) {// 출금액 > checking계좌의 잔액일 때
-			protectedBy.balance -= (amount - balance); // 저축계좌에서 출금액과 checking계좌 잔액의 차액만큼 출금
+			protectedBy.withdraw(amount - balance); // 저축계좌에서 출금액과 checking계좌 잔액의 차액만큼 출금
 			balance -= balance; // checking계좌 잔액 전액 인출
 			return true;
 		} else {
-			balance -= amount;
+			super.withdraw(amount);
 			return true;
 		}
 
