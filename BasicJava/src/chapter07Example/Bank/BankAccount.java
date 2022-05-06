@@ -18,7 +18,7 @@ public class BankAccount {
 	}
 
 	public boolean withdraw(int amount) { // 출금 메소드
-		if (balance>= amount) {
+		if (balance >= amount) {
 			balance -= amount; // 잔고에서 출금액 만큼 출금
 			return true;
 		} else {
