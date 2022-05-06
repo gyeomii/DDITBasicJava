@@ -28,7 +28,6 @@ public class BankAccount {
 	}
 
 	public boolean transfer(int amount, BankAccount otherAccount) { // 현재계좌에서 amount만큼 다른계좌로 송금하는 메소드
-
 		if (balance < amount) { // 잔고 < 출금액 일 때
 			return false;
 		} else {
