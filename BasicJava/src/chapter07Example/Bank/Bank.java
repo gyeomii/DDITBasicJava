@@ -1,4 +1,4 @@
-package chapter07Example;
+package chapter07Example.Bank;
 
 public class Bank {
 	// 필드
