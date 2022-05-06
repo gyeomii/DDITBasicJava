@@ -24,7 +24,6 @@ public class BankAccount {
 			balance -= amount; // 잔고에서 출금액 만큼 출금
 			return true;
 		}
-
 	}
 
 	public boolean transfer(int amount, BankAccount otherAccount) { // 현재계좌에서 amount만큼 다른계좌로 송금하는 메소드
