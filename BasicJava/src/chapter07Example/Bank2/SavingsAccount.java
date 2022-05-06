@@ -1,4 +1,4 @@
-package Chapter07Bank2;
+package chapter07Example.Bank2;
 
 public class SavingsAccount extends BankAccount {
 	// 필드
