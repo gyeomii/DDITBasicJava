@@ -15,7 +15,7 @@ public class SortExample {
 		students[7] = new Student("박수현", 20);
 		students[8] = new Student("윤재열", 24);
 		students[9] = new Student("최재혁", 17);
-		
+
 		Arrays.sort(students);
 		for (Student student : students) {
 			System.out.println(student);

@@ -1,4 +1,4 @@
-package SortExample;
+ package SortExample;
 
 public class Student implements Comparable<Student> {
 	private String name;
@@ -26,9 +26,10 @@ public class Student implements Comparable<Student> {
 	public String toString() {
 		return "Student [name=" + name + ", age=" + age + "]";
 	}
-
+	
 	@Override
 	public int compareTo(Student o) {
+		// 이름순으로 내림차순
 		return -this.name.compareTo(o.name);
 	}
 		/* 나이순으로 오름차순
@@ -40,13 +41,12 @@ public class Student implements Comparable<Student> {
 			return 0;
 		}*/
 		/* 이름 순으로 오름차순
-//		if (this.name.compareTo(o.name) > 0) {
-//			return 1;
-//		} else if (this.name.compareTo(o.name) < 0) {
-//			return -1;
-//		} else {
-//			return 0;
-//		}
+		if (this.name.compareTo(o.name) > 0) {
+			return 1;
+		} else if (this.name.compareTo(o.name) < 0) {
+			return -1;
+		} else {
+			return 0;
+		}
 	}*/
-	
 }
