@@ -1,6 +1,7 @@
 package chapter09;
 
 public class Anonymous {
+	// 필드 초기값으로 대입
 	RemoteControl field = new RemoteControl() {
 
 		@Override
@@ -15,6 +16,7 @@ public class Anonymous {
 	};
 
 	void method1() {
+		// 로컬 변수값으로 대입
 		RemoteControl localVar = new RemoteControl() {
 
 			@Override
@@ -28,7 +30,7 @@ public class Anonymous {
 
 			}
 		};
-
+		// 로컬변수 사용
 		localVar.turnOn();
 	}
 
