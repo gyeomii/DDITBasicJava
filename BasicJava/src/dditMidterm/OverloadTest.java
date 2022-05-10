@@ -1,4 +1,4 @@
-package midtermExam;
+package dditMidterm;
 
 public class OverloadTest {
 	public static void main(String[] args) {

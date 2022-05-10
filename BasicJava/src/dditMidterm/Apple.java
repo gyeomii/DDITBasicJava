@@ -1,4 +1,4 @@
-package midtermExam;
+package dditMidterm;
 
 public class Apple extends Fruits {
 	public String getName() {

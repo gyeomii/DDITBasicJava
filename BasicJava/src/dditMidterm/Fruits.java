@@ -1,4 +1,4 @@
-package midtermExam;
+package dditMidterm;
 
 public class Fruits {
 	private String name;

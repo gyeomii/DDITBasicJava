@@ -1,4 +1,4 @@
-package midtermExam;
+package dditMidterm;
 
 public class UserTest {
 	public static void main(String[] args) {

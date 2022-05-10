@@ -1,4 +1,4 @@
-package midtermExam;
+package dditMidterm;
 
 import java.util.List;
 
