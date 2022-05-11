@@ -8,9 +8,9 @@ public abstract class Shape implements Comparable<Shape> {
 	
 	@Override
 	public int compareTo(Shape o) {
-		if (this.area() > o.area()) {
+		if (area() > o.area()) {
 			return 1;
-		} else if (this.area() < o.area()) {
+		} else if (area() < o.area()) {
 			return -1;
 		} else {
 			return 0;
