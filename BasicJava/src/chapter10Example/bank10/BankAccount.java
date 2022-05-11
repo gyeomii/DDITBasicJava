@@ -1,8 +1,13 @@
 package chapter10Example.bank10;
 
+import java.text.DecimalFormat;
+
 public abstract class BankAccount {
 	// 필드
 	protected int balance;
+
+	// 숫자에 세자리 마다 ','를 찍어주기 위한 함수, 출력은 String 이다.
+	DecimalFormat formatter = new DecimalFormat("###,###");
 
 	// 생성자
 	public BankAccount(int balance) {
@@ -40,6 +45,6 @@ public abstract class BankAccount {
 	}
 
 	public String toString() { // 잔액 출력
-		return String.format("%,d", balance);
+		return String.format("%s", formatter.format(balance));
 	}
 }

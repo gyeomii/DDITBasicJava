@@ -2,38 +2,28 @@ package chapter10Example.bank10;
 
 public class BankTest {
 	public static void main(String[] args) {
-		Bank bank = new Bank();
-
-		Customer customer1 = new Customer("Tony", "Stark");
-		SavingsAccount customer1SavingsAccount = new SavingsAccount(2000, 0.01);
-		customer1.addAccount(customer1SavingsAccount);
-		customer1.addAccount(new CheckingAccount(3000, customer1SavingsAccount));
-		bank.addCustomer(customer1);
-
-		Customer customer2 = new Customer("Peter", "Parker");
-		customer2.addAccount(new CheckingAccount(2000));
-		bank.addCustomer(customer2);
-
-		Customer customer3 = new Customer("Steve", "Rogers");
-		SavingsAccount customer3SavingsAccount = new SavingsAccount(2000, 0.03);
-		customer3.addAccount(customer3SavingsAccount);
-		customer3.addAccount(new CheckingAccount(1000, customer3SavingsAccount));
-		bank.addCustomer(customer3);
-
-		System.out.println();
-		printCustomers(bank.getCustomers());
-	}
-
-	private static void printCustomers(Customer[] customers) {
-		for (Customer c : customers) { // customers 를 c에다가 하나씩 대입
-			if (c != null) {
-				System.out.println("이름: " + c + ", 계좌의 수: " + c.getNumberOfAccounts());
-				for (int i = 0; i < c.getNumberOfAccounts(); i++) {
-					System.out.println(
-							"계좌 종류: " + c.getAccount(i).getAccountType() + ", 잔고: " + c.getAccount(i) + "원");
-				}
-				System.out.println();
-			}
+		CheckingAccount tonyAccount = new CheckingAccount(3000);
+		CheckingAccount steveAccount = new CheckingAccount(3000);
+		try {
+			tonyAccount.transfer(5000, steveAccount);
+			System.out.println("송금 완료");
+		} catch(NullPointerException e) {
+			System.out.println("해당하는 계좌가 없습니다.");
+			System.out.println("송금 실패");
+		}catch (IllegalArgumentException e) {
+			System.out.println("해당하는 금액을 보낼 수 없습니다.");
+			System.out.println("송금 실패");
 		}
+		try {
+			tonyAccount.transfer(2000, null);
+			System.out.println("송금 완료");
+		} catch(NullPointerException e) {
+			System.out.println("해당하는 계좌가 없습니다.");
+			System.out.println("송금 실패");
+		}catch (IllegalArgumentException e) {
+			System.out.println("해당하는 금액을 보낼 수 없습니다.");
+			System.out.println("송금 실패");
+		}
+		
 	}
 }
