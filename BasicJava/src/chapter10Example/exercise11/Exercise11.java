@@ -14,21 +14,21 @@ public class Exercise11 {
 			int num = scanner.nextInt();
 			System.out.print("어떤 수로 나누시겠습니까?>> ");
 			int divider = scanner.nextInt();
-			
-			if (num == 0 || divider == 0) {
+			// ArithmeticException이 있는줄 모르고 if문으로 RuntimeException을 던짐
+			/*if (num == 0 || divider == 0) {
 				throw new RuntimeException("0으로 나눌 수 없습니다. 다시 입력해주세요.");
-			} else {
+			} else {*/
 				int divideresult = num / divider;
 				System.out.println(num + "/" + divider + " = " + divideresult);
 				run = false;
 				scanner.close();
-			}
+		  /*}*/
 			}catch(InputMismatchException e) {
 				System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
 				scanner.next();
 				continue;
-			}catch(RuntimeException e) {
-				System.out.println(e.getMessage());
+			}catch(ArithmeticException e) {
+				System.out.println("0으로 나눌 수 없습니다. 다시 입력해주세요."/*e.getMessage()*/);
 				continue;
 			}
 		}
