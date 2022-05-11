@@ -1,6 +1,5 @@
 package chapter08Example.book08;
 
-import java.text.DecimalFormat;
 import java.util.Objects;
 
 public abstract class Book {
@@ -9,7 +8,6 @@ public abstract class Book {
 	private String author;
 	private static int countOfBooks = 0;
 	
-	DecimalFormat formatter = new DecimalFormat("###,###");
 	
 	public Book(String title, String author) {
 		this.title = title;
@@ -51,18 +49,18 @@ public abstract class Book {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj) {
 			return true;
-		if (obj == null)
+		}
+		if (!(obj instanceof Book)) {
 			return false;
-		if (getClass() != obj.getClass())
-			return false;
+		}
 		Book other = (Book) obj;
 		return Objects.equals(author, other.author) && Objects.equals(title, other.title);
 	}
-	
+
 	@Override
 	public String toString() {
-		return String.format("관리번호 %d번, 제목: %s, 작가: %s(일주일 연체료: %s)", number, title, author, formatter.format(getLateFee(7)));
+		return String.format("관리번호 %d번, 제목: %s, 작가: %s(일주일 연체료: %,d)", number, title, author, getLateFee(7));
 	}
 }
