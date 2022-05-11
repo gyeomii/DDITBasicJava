@@ -26,7 +26,7 @@ public abstract class BankAccount {
 	}
 
 	public boolean withdraw(int amount) { // 출금 메소드
-		if (balance >= amount) {
+		if (balance >= amount && amount >= 0) {
 			balance -= amount; // 잔고에서 출금액 만큼 출금
 			return true;
 		} else {
@@ -35,13 +35,17 @@ public abstract class BankAccount {
 	}
 
 	public boolean transfer(int amount, BankAccount otherAccount) { // 현재계좌에서 amount만큼 다른계좌로 송금하는 메소드
-		if (withdraw(amount) == true) {
+		if (amount < 0 || amount > balance) {
+			throw new IllegalArgumentException();
+		} /*else if (otherAccount == null) {
+		throw new NullPointerException();
+		}*/ //어차피 nullpointexception오류는 catch에서 잡기때문에 생략 가능할지도
+		if (balance >= amount) {
 			otherAccount.deposit(amount);
 			withdraw(amount);
 			return true;
-		} else {
-			return false;
 		}
+		return false;
 	}
 
 	public String toString() { // 잔액 출력
