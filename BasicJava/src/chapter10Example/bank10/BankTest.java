@@ -1,4 +1,4 @@
-package chapter08Example.bank08;
+package chapter10Example.bank10;
 
 public class BankTest {
 	public static void main(String[] args) {
