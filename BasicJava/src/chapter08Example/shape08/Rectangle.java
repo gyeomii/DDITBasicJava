@@ -22,8 +22,4 @@ public class Rectangle extends Shape {
 	public double perimeter() {
 		return 2 * (width + height);
 	}
-
-//	public String toString() {
-//		return String.format("도형의 종류: 사각형, 둘레: %.1fcm, 넓이: %.2f㎠", perimeter(), area());
-//	}
 }

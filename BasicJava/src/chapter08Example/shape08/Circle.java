@@ -21,7 +21,4 @@ public class Circle extends Shape {
 		return 2 * radius * Math.PI;
 	}
 
-//	public String toString() {
-//		return String.format("도형의 종류: 원, 둘레: %.2fcm, 넓이: %.2f㎠", perimeter(), area());
-//	}
 }
