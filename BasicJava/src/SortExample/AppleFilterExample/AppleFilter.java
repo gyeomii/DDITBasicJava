@@ -1,4 +1,4 @@
-package SortExample;
+package SortExample.AppleFilterExample;
 
 public class AppleFilter {
 	public static Apple[] filter(Apple[] apples, ApplePredicate predicate) {

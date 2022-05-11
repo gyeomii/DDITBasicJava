@@ -1,4 +1,4 @@
-package SortExample;
+package SortExample.AppleFilterExample;
 
 public class AppleExample {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package SortExample;
+package SortExample.AppleFilterExample;
 
 public class Apple {
 	private String name;
