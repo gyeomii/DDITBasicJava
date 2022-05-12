@@ -3,7 +3,7 @@ package chapter10Example.bank10;
 public class BankTest {
 	public static void main(String[] args) {
 		CheckingAccount tonyAccount = new CheckingAccount(3000);
-		CheckingAccount steveAccount = new CheckingAccount(3000);
+		CheckingAccount steveAccount = new CheckingAccount(4000);
 		try {
 			tonyAccount.transfer(5000, steveAccount);
 			System.out.println("송금 완료");

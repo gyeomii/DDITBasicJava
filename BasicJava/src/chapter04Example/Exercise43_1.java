@@ -1,13 +1,14 @@
-package chapter04;
+package chapter04Example;
 
 import java.util.Scanner;
 
-public class Exercise43 {
+public class Exercise43_1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int total;
 		double avg;
 		String grade;
+		int avgInt;
 		
 		System.out.println("점수를 입력하세요");
 		System.out.print("프로그래밍 기초: ");
@@ -23,22 +24,26 @@ public class Exercise43 {
 		
 		total = program + db + ui + app + machine;
 		avg = total / 5.0;
+		avgInt = (int)avg/10;
 		
-		if(avg>=90) {
-			grade = "A";
+		switch (avgInt) {
+		case 10: case 9:
+				grade = "A";
+				break;
+			case 8:
+				grade = "B";
+				break;
+			case 7:
+				grade = "C";
+				break;
+			case 6:
+				grade = "D";
+				break;
+			default:
+				grade = "F";
+				break;
 		}
-		else if(avg>=80){
-			grade = "B";
-		}
-		else if(avg>=70) {
-			grade = "C";
-		}
-		else if(avg>=60) {
-			grade = "D";
-		}
-		else {
-			grade = "F";
-		}
+		
 		System.out.println("총점: " + total);
 		System.out.println("평균: " + avg );
 		System.out.printf("학점: %s", grade);

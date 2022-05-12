@@ -1,4 +1,4 @@
-package chapter04;
+package chapter04Example;
 
 import java.util.Random;
 import java.util.Scanner;
