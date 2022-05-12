@@ -42,7 +42,6 @@ public abstract class BankAccount {
 		}*/ //어차피 nullpointexception오류는 catch에서 잡기때문에 생략 가능할지도
 		if (balance >= amount) {
 			otherAccount.deposit(amount);
-			withdraw(amount);
 			return true;
 		}
 		return false;
