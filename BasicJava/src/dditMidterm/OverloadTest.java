@@ -8,5 +8,6 @@ public class OverloadTest {
 	private void test() {
 		Fruits fruits = new Apple();
 		System.out.println(fruits.getName());
+		System.out.println();
 	}
 }

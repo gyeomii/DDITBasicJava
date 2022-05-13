@@ -6,6 +6,8 @@ public class AnimalExample {
 		Cat cat = new Cat();
 		dog.sound();
 		cat.sound();
+		dog.breathe();
+		cat.breathe();
 		System.out.println("------");
 
 		// 변수의 자동 타입 변환
@@ -19,6 +21,7 @@ public class AnimalExample {
 		// 메소드의 다형성
 		animalSound(new Dog());
 		animalSound(new Cat());
+		
 	}
 
 	public static void animalSound(Animal animal) {
