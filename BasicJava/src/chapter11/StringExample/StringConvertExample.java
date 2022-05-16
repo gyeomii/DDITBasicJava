@@ -1,4 +1,4 @@
-package chapter11;
+package chapter11.StringExample;
 
 public class StringConvertExample {
 	public static void main(String[] args) {

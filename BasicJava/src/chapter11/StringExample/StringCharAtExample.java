@@ -1,4 +1,4 @@
-package chapter11;
+package chapter11.StringExample;
 
 public class StringCharAtExample {
 	public static void main(String[] args) {
