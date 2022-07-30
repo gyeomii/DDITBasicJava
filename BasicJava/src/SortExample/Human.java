@@ -23,7 +23,7 @@ public class Human implements Comparable<Human> {
 	}
 	@Override
 	public String toString() {
-		return "Human [name=" + name + ", age=" + age + "]";
+		return "[name=" + name + ", age=" + age + "]";
 	}
 	@Override
 	public int compareTo(Human o) {
